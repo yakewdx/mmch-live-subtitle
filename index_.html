@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="./sources/mainframe.css" rel="stylesheet" type="text/css" />
+  <title>MMCH Live! Subtitle</title>
+
+  <!-- CodeMirror -->
+  <script src="./node_modules/codemirror/lib/codemirror.js"></script>
+  <script src="./node_modules/codemirror/addon/hint/show-hint.js"></script>
+  <link rel="stylesheet" href="./node_modules/codemirror/addon/hint/show-hint.css" type="text/css" />
+  <link rel="stylesheet" href="./sources/editor.css" type="text/css" />
+  <link rel="stylesheet" href="./sources/toolbox.css" type="text/css" />
+  <script src="./sources/toolbox.js"></script>
+</head>
+
+<body>
+
+  <div class="w-container main_container">
+    <h1 class="header">MMCH Live! Subtitle</h1>
+    <div class="folder">
+      <a onclick="removeContent('name_list')">清除</a>
+      <a onclick="getList('./resources/test_name.xml')">读取</a>
+      <a onclick="addNode(this.parentNode)">+</a>
+      <a onclick="createXMLFile(document.getElementById('category-root'), '/Users/Extreme/Desktop/abc.xml')">+</a>
+      <a id="folderSelect">选择文件夹</a>
+      <a id="readXmlTags">选择文件</a>
+      <a id="saveXmlTags">保存文件</a>
+      <div id="root-dom"></div>
+
+    </div>
+
+
+    <div class="live_editor">
+      <div id="firepad"></div>
+      <script>
+          require('coffee-script');
+          require('./sources/test');
+        </script>
+        <script src="./sources/tag-hint.js" > </script>
+    </div>
+
+
+    <div class="toolbox" id="toolbox">
+      <div class="functional_area" id="name_list"></div>
+      <script>
+        getList('./resources/test_name.xml');
+      </script>
+    </div>
+    <div class="settings" id="tb_settings"></div>
+    <script>
+      require("babel-register")({plugins: "transform-react-jsx"});
+      require("./my-app.jsx");
+    </script>
+  </div>
+  
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>

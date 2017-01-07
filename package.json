@@ -1,0 +1,41 @@
+{
+  "name": "mmch-live-subtitle",
+  "version": "1.0.0",
+  "description": "a live subtitle editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "keywords": [
+    "MMCH",
+    "subtitle"
+  ],
+  "author": "ADAI",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.9.0",
+    "electron-prebuilt": "^1.2.0",
+    "electron-rebuild": "^1.1.5",
+    "gulp": "^3.9.1",
+    "gulp-webpack": "^1.5.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "electron-prebuilt": "^1.2.0",
+    "react-codemirror": "https://github.com/yakewdx/react-codemirror/tarball/master"
+  },
+  "babel": {
+    "sourceMaps": "inline",
+    "presets": [
+      "react"
+    ]
+  }
+}

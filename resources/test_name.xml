@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<category name="人物名称">
+    <category name="辛德利亚王国">
+        <item type="person" name="辛巴达">
+            <description>シンドバット</description>
+        </item>
+        <item type="person" name="多拉公">
+            <description>ドラゴーン</description>
+        </item>
+    </category>
+</category>

@@ -1,0 +1,128 @@
+.tag {
+  display: inline-block;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 6px 10px;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #dcc9ff;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  -webkit-user-select: none;
+}
+
+.tag:hover {
+    cursor: pointer;
+}
+
+.tag:active {
+  background-color: #abc;
+}
+
+.category {
+  margin-top: 16px;
+  padding-left: 10px;
+  border-top: 1px dotted #fff3f3;
+  border-left: 1px none #b9b9b9;
+  border-top-left-radius: 20px;
+  /*background-color: transparent;*/
+  background: -webkit-linear-gradient(top, #fff, #fffbf8);
+  color: #adadad;
+}
+
+.category-name {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  width: auto;
+  -webkit-user-select: none;
+}
+
+.category-name:hover {
+    cursor: pointer;
+}
+
+.newtag {
+  margin-top: 7px;
+  margin-right: 13px;
+  margin-bottom: 7px;
+  padding: 8px 12px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #dcc9ff;
+  -webkit-user-select: none;
+}
+
+.newtag_label {
+  color: #fff;
+  -webkit-user-select: none;
+}
+
+.newtag_input {
+  width: 85%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-width: 0px;
+  padding-left: 15px;
+}
+
+.category .functional_button {
+    float: right;
+    padding: 2px 8px;
+    color:#fff;
+    background-color: #aaa; 
+    border-radius: 20px;
+    -webkit-user-select: none;
+}
+
+.newtag_button {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #75b7ff;
+  color: #fff;
+  border-width: 0px;
+  -webkit-user-select: none;
+}
+
+.button_in_tag {
+    position: relative;
+    padding: 2px 8px;
+    color:#fff;
+    background-color: #aaa; 
+    border-radius: 20px;
+    -webkit-user-select: none;
+}
+
+/* --------------------------- begin haloContext --------------------- */
+
+div.hct{
+    /*background:transparent url("/content/img/ajax/greybutton.png") no-repeat 0 0;*/
+    background: #aaa;
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    font-size:18px;
+    text-align:center;
+    margin:0;
+    color:#fff;
+    display:none;
+    cursor:pointer;
+    border-radius: 20px;
+}   
+div.hct:hover{
+    /*background:transparent url("/content/img/ajax/greyhighlight.png") no-repeat 0 0;*/
+    background: #c3c3c3;
+}
+#hpt{
+    position:absolute;
+    width:10px; height:10px;
+    display:none;
+    background:000;
+    opacity:0;
+}
+
+/* --------------------------- end haloContext --------------------- */

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./sources/mainframe.css" rel="stylesheet" type="text/css" />
+    <title>MMCH Live! Subtitle</title>
+
+    <!-- CodeMirror -->
+    <link rel="stylesheet" href="./node_modules/codemirror/addon/hint/show-hint.css" type="text/css" />
+    <link rel="stylesheet" href="./sources/editor.css" type="text/css" />
+    <link rel="stylesheet" href="./sources/toolbox.css" type="text/css" />
+</head>
+
+<body>
+    <div id="main"></div>
+    <script>
+      require("babel-register")({plugins: "transform-react-jsx"});
+      require("./my-app.jsx");
+    </script>
+
+</body>
+
+</html>
